@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&family=Rubik+Bubbles&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    
+}
+body {
+    background: #e5ffc8;
+   
+}
+.ilustration{
+    display: block;
+    width: 60%;
+    margin: 60px auto;
+}
+#Line1 {
+    stroke: black; 
+    stroke-width: 2; 
+    animation: Blink 1s infinite alternate; 
+  
+  }
+  
+  #Line2 {
+    stroke: black; 
+    stroke-width: 2; 
+    animation: Blink 2s infinite alternate; 
+  
+  }
+  
+  @keyframes Blink {
+    to {
+      opacity: 0; 
+    }
+  }
+.header {
+    display: flex;
+    background-color: #C1FF83;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 1px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+ height: 70px;
+ border-radius: 15px;
+ width: auto;
+ transition: all 0.2s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+}
+.header .nav-links a{
+    font-size: 700;
+    color: #A01EFF;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.header .nav-links a:hover{
+    transform: scale(1.2);
+    border-radius: 8px;
+    background: #21040D;
+    color: #1A1089;
+    
+}
+.header .nav-links .submenu:hover .hijos {
+    display: block;
+}
+
+.header .nav-links .submenu .hijos {
+    display: none;
+    background: #C1FF83;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding: 0; 
+}
+
+.header .nav-links .submenu .hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.header .nav-links .submenu .hijos li a {
+    display: block;
+    padding: 10px; 
+    text-decoration: none;
+    color: #A01EFF;
+}
+
+.header .nav-links .submenu a i {
+    margin-right: 5px; 
+}
